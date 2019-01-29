@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel Test Suite]">
+  <listeners>
+    <listener class-name="listeners.ITestListener_TNGL"/>
+  </listeners>
+  <test name="Login and Register testcases; Dashboard and Outside the App page(failed)">
+    <classes>
+      <class name="ai_TC_For_AppICEHomePage.AppICERegisterPage">
+        <methods>
+          <include name="getbrowser"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ai_TC_For_AppICEHomePage.AppICERegisterPage -->
+      <class name="appICE_Pages.OutsideTheAppPage">
+        <methods>
+          <include name="getbrowser"/>
+          <include name="competingApps" invocation-numbers="0 1 2 3"/>
+          <include name="avgSessionLength" invocation-numbers="0 1 2 3"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- appICE_Pages.OutsideTheAppPage -->
+      <class name="ai_TC_For_AppICEHomePage.AppICEHomePage">
+        <methods>
+          <include name="loginpage_EmtUnAndValidPw"/>
+          <include name="getbrowser"/>
+          <include name="loginpage_ValidUnAndInvalidPw"/>
+          <include name="loginpage_ValidUnAndValidPw"/>
+          <include name="loginpage_InValidUnAndValidPw"/>
+          <include name="loginpage_ValidUnAndEmptPw"/>
+          <include name="loginpage_InValidRandAndvalid"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ai_TC_For_AppICEHomePage.AppICEHomePage -->
+      <class name="appICE_Pages.AppsDashboard">
+        <methods>
+          <include name="todayDateRange" invocation-numbers="0 1 2 3"/>
+          <include name="getbrowser"/>
+          <include name="dailyCohort" invocation-numbers="0 1 2 3"/>
+          <include name="weeklyCohort" invocation-numbers="0 1 2 3"/>
+          <include name="yearCohort" invocation-numbers="0 1 2 3"/>
+          <include name="last30days" invocation-numbers="0 1 2 3"/>
+          <include name="lastSevendays" invocation-numbers="0 1 2 3"/>
+          <include name="thisMonth" invocation-numbers="0 1 2 3"/>
+          <include name="yesterdayDateRange" invocation-numbers="0 1 2 3"/>
+          <include name="lastMonth" invocation-numbers="0 1 2 3"/>
+          <include name="monthlyCohort" invocation-numbers="0 1 2 3"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- appICE_Pages.AppsDashboard -->
+    </classes>
+  </test> <!-- Login and Register testcases; Dashboard and Outside the App page(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->

@@ -1,0 +1,368 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.AppICE</groupId>
+	<artifactId>AppICE_Maven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>AppICE_Maven</name>
+	<url>http://maven.apache.org</url>
+
+<!-- 	<properties>
+		<suiteXmlFile>testng.xml</suiteXmlFile>
+	</properties> -->
+
+<!-- 
+<properties>
+		<suiteXmlFile>testngapi.xml</suiteXmlFile>
+	</properties> -->
+	
+	
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.javacsv/javacsv -->
+		<dependency>
+			<groupId>net.sourceforge.javacsv</groupId>
+			<artifactId>javacsv</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>javax.json</groupId>
+			<artifactId>javax.json-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.7</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.sf.opencsv/opencsv -->
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.3</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+			<scope>compile</scope>
+		</dependency>
+ <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.3.1</version>
+</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.11-beta2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-examples</artifactId>
+			<version>3.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-excelant</artifactId>
+			<version>3.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java 
+			2.53.1 -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.53.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.zetten/xvfb-maven-plugin -->
+		<dependency>
+			<groupId>com.github.zetten</groupId>
+			<artifactId>xvfb-maven-plugin</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+		<!-- <dependency> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
+			<version>3.0.1</version> </dependency> -->
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>2.21.0</version>
+</dependency>
+		
+	 
+	<!-- 	<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-email</artifactId>
+    <version>1.2</version>
+</dependency>
+		 -->
+		
+	<!-- 	firefox fixes -->
+	<!-- 	<dependency>
+<groupId>com.google.guava</groupId>
+<artifactId>guava</artifactId>
+<version>19.0</version></dependency>
+		 -->
+		
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>16.0.1</version>
+</dependency>
+	</dependencies>
+	<organization>
+		<name>semusi</name>
+		<url>www.semusi.com</url>
+	</organization>
+
+
+	<build>
+	
+	
+		<plugins>
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.2</version>
+				<configuration>
+					<compilerVersion>1.8</compilerVersion>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+   
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.14.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+          <!--  <suiteXmlFiles>
+            <suiteXmlFile>testngapi.xml</suiteXmlFile>
+          </suiteXmlFiles> -->
+          
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <encoding>iso-8859-1</encoding>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+
+
+ 
+
+
+			<!-- <plugin> <groupId>ch.fortysix</groupId> <artifactId>maven-postman-plugin</artifactId> 
+				<executions> <execution> <id>send a mail</id> <phase>test</phase> <goals> 
+				<goal>send-mail</goal> </goals> <inherited>true</inherited> <configuration> 
+				From Email address <from>madhawesh,rai@semusi.com</from> Email subject <subject>Test 
+				Automation Report</subject> Fail the build if the mail doesnt reach <failonerror>true</failonerror> 
+				host <mailhost>smtp.gmail.com</mailhost> port of the host <mailport>587</mailport> 
+				<mailssl>true</mailssl> <mailAltConfig>true</mailAltConfig> Email Authentication(USername 
+				and Password) <mailuser>appice</mailuser> <mailpassword>hardh0meJon</mailpassword> 
+				<receivers> To Email address <receiver>aman.aggarwal@semusi.com</receiver> 
+				</receivers> <fileSets> <fileSet> Report directory Path <directory>E://AppICE_Data_Driven_FW//com.appICE_Maven//test-output</directory> 
+				<includes> Report file name <include>emailable-report.html</include> </includes> 
+				Use Regular Expressions like **/*.html if you want all the html files to 
+				send </fileSet> </fileSets> </configuration> </execution> </executions> </plugin> -->
+				
+				
+				
+				
+				
+
+
+<!-- Post-Man plugin -->
+		 <plugin>
+			<groupId>ch.fortysix</groupId>
+			<artifactId>maven-postman-plugin</artifactId>
+			<executions>
+				<execution>
+				
+				<id>send a mail</id>
+				<phase>test</phase>
+				<goals>
+				<goal>send-mail</goal>
+				</goals>
+				<inherited>true</inherited>
+				
+				<configuration>
+					<!-- From Email address -->
+					<from>madhawesh.rai@gmail.com</from>
+					
+					<!--  Email subject -->
+					<subject>Test Automation Report</subject>
+					
+					<!-- Fail the build if the mail doesnt reach -->
+					<failonerror>true</failonerror>
+					
+					<!-- host -->
+					<mailhost>smtp.gmail.com</mailhost>
+					<!-- port of the host -->
+					<mailport>465</mailport>
+					<mailssl>true</mailssl>
+					<mailAltConfig>true</mailAltConfig>
+					
+					<!-- Email Authentication(USername and Password) -->
+					<mailuser>madhawesh.rai@gmail.com</mailuser>
+					<mailpassword>Maddy</mailpassword>
+					
+					<receivers>
+						<!-- To Email address -->
+						<receiver>madhawesh70@gmail.com</receiver>
+					</receivers>
+					
+					<!-- <fileSets>
+					<fileSet>
+						Report directory Path
+						<directory>C://workspace//SendMavenEmail//Reports</directory>
+						<includes>
+							Report file name
+							<include>TestReport.html</include>
+						</includes>
+						Use Regular Expressions like **/*.html if you want all the html files to send
+						</fileSet>
+					</fileSets>		 -->		
+				
+				</configuration>
+				</execution>
+			</executions>
+		</plugin>
+				
+				
+				
+				
+				
+				
+		</plugins>
+
+
+	</build>
+	 <reporting>
+    <plugins>
+    <!-- TestNG-xslt related configuration. -->
+      <plugin>
+        <groupId>org.reportyng</groupId>
+        <artifactId>reporty-ng</artifactId>
+        <version>1.2</version>
+        <configuration>
+          <!-- Output directory for the testng xslt report -->
+          <outputDir>/target/testng-xslt-report</outputDir>
+          <sortTestCaseLinks>true</sortTestCaseLinks>
+          <testDetailsFilter>FAIL,SKIP,PASS,CONF,BY_CLASS</testDetailsFilter>
+          <showRuntimeTotals>true</showRuntimeTotals>
+        </configuration>
+      </plugin>
+      
+      
+      
+      
+      
+      
+    </plugins>
+    
+    
+    
+    
+</reporting>
+ <pluginRepositories>
+    <pluginRepository>
+      <id>reporty-ng</id>
+      <url>https://github.com/cosminaru/reporty-ng/raw/master/dist/maven</url>
+    </pluginRepository>
+</pluginRepositories>
+
+
+
+</project>

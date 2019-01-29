@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests">
+	<listeners>
+		<listener class-name="listeners.ITestListener_TNGL"></listener>
+	</listeners>
+
+	<test
+		name="sanity test cases:">
+		<classes>
+
+		     	
+		     	
+         	   <class name="ai_TC_For_AppICEHomePage.AppICEHomePage" /> 
+		 	 <class name="ai_TC_For_AppICEHomePage.AppICERegisterPage" /> 
+			<class name="appICE_Pages.TC_ValidateApi" />   
+		
+		
+					
+		
+		
+			</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

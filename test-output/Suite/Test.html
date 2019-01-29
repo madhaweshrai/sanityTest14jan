@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 28 17:44:12 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>178 seconds (178144 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.HomePageEle_AboutUs()'><b>HomePageEle_AboutUs</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>0</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.HomePageEle_Blog()'><b>HomePageEle_Blog</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>28</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.HomePageEle_Home()'><b>HomePageEle_Home</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>0</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.HomePageEle_Product()'><b>HomePageEle_Product</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>0</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICERegisterPage.RegisterPageInValidData()'><b>RegisterPageInValidData</b><br>Test class: ai_TC_For_AppICEHomePage.AppICERegisterPage<br>Test method: RegisterPage_InValidData<br>Parameters:  ,  ,  ,  </td>
+<td></td>
+<td>19</td>
+<td>ai_TC_For_AppICEHomePage.AppICERegisterPage@343f4d3d</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICERegisterPage.RegisterPageInValidData()'><b>RegisterPageInValidData</b><br>Test class: ai_TC_For_AppICEHomePage.AppICERegisterPage<br>Test method: RegisterPage_InValidData<br>Parameters: Testing, rama.swamy, admin@402, admin@402</td>
+<td></td>
+<td>11</td>
+<td>ai_TC_For_AppICEHomePage.AppICERegisterPage@343f4d3d</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICERegisterPage.RegisterPageInValidData()'><b>RegisterPageInValidData</b><br>Test class: ai_TC_For_AppICEHomePage.AppICERegisterPage<br>Test method: RegisterPage_InValidData<br>Parameters: Testing, rama.swamy@semusi.com, admin@402, admin@401</td>
+<td></td>
+<td>11</td>
+<td>ai_TC_For_AppICEHomePage.AppICERegisterPage@343f4d3d</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICERegisterPage.RegisterPageInValidData()'><b>RegisterPageInValidData</b><br>Test class: ai_TC_For_AppICEHomePage.AppICERegisterPage<br>Test method: RegisterPage_InValidData<br>Parameters: Testing, rama.swamy@semusi.com, admin@401, admin@402</td>
+<td></td>
+<td>11</td>
+<td>ai_TC_For_AppICEHomePage.AppICERegisterPage@343f4d3d</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICERegisterPage.RegisterPageValidData()'><b>RegisterPageValidData</b><br>Test class: ai_TC_For_AppICEHomePage.AppICERegisterPage</td>
+<td></td>
+<td>7</td>
+<td>ai_TC_For_AppICEHomePage.AppICERegisterPage@343f4d3d</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.loginpage_EmtUnAndValidPw()'><b>loginpage_EmtUnAndValidPw</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>4</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.loginpage_InValidRandAndvalid()'><b>loginpage_InValidRandAndvalid</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>7</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.loginpage_InValidUnAndValidPw()'><b>loginpage_InValidUnAndValidPw</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>8</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.loginpage_ValidUnAndEmptPw()'><b>loginpage_ValidUnAndEmptPw</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>4</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.loginpage_ValidUnAndInvalidPw()'><b>loginpage_ValidUnAndInvalidPw</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>5</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+<tr>
+<td title='ai_TC_For_AppICEHomePage.AppICEHomePage.loginpage_ValidUnAndValidPw()'><b>loginpage_ValidUnAndValidPw</b><br>Test class: ai_TC_For_AppICEHomePage.AppICEHomePage</td>
+<td></td>
+<td>17</td>
+<td>ai_TC_For_AppICEHomePage.AppICEHomePage@5e3a8624</td></tr>
+</table><p>
+</body>
+</html>
